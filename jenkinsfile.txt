@@ -1,0 +1,17 @@
+pipeline{
+  agent any 
+   stages{
+      stage('build and test'){
+      steps{
+          echo'build and test successfull!'
+      }}
+      stage('Generate Artifact'){
+      steps{
+            echo"HEllO"
+      }}}
+      post{
+        success{
+          echo'Pipeline completed successfully!'
+        }
+    }
+}
